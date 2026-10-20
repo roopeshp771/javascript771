@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tudo</title>
+    <style>
+        .title{
+            font-size: 20px;
+            font-style:initial;
+        }
+        </style>
+</head>
+<body>
+    
+    <p class = "title">Tudo List Practice 1</p>
+    <input class = "js-input" placeholder="Tudo name" >
+    <button class = "js-btn" onclick = "addTudo()">Add</button>
+    <div class = "js-tudos"></div>
+    <script>
+        const tudoArray = ['html', 'css'];
+        displayTudos();
+
+       function displayTudos(){
+         let tudoElements = '';
+
+        for(let i=0; i<tudoArray.length;i++){
+            const item = tudoArray[i];
+            const html = `<p>${item}</p>`;
+            tudoElements = tudoElements + html;
+
+        }
+    
+        
+        console.log(tudoElements);
+        document.querySelector(".js-tudos").innerHTML = tudoElements;
+        }
+
+        function addTudo(){
+            
+            const inputElement = document.querySelector(".js-input");
+            const inputValue = inputElement.value;
+            console.log(inputValue);
+            tudoArray.push(inputValue);
+            console.log(tudoArray);
+            inputElement.value = null;
+            displayTudos();
+        }
+
+        </script>
+</body>
+</html> 

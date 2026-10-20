@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object in Detail</title>
+</head>
+<body>
+    <script>
+    const product = {
+        name : 'shirt',
+        price : 500,
+        ["delivery-time"] : '20min',
+        rating : {
+            stars : "4.5"
+        },
+        fun(){
+            console.log("google is my target");
+        },
+    };
+    console.log(product);
+    console.log(product.name);
+    console.log(product.color);
+    console.log(product["name"]);
+    product["name"] = "black shirt";
+    console.log(product);
+    console.log(product["delivery-time"]);
+    console.log(product.rating.stars);
+    product.fun(); 
+    const car = {
+        brand : "toyota",
+        "car-model" : "fortuner"
+    };
+    let key = "another";
+    console.log(car["car-model"])
+    console.log(key );
+    </script>
+</body>
+</html>

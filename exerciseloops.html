@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myArray1 = [10,20,30,40,50];
+        function getlast(){
+            const temp = myArray1[0];
+            lastIndex = myArray1.length - 1;
+            myArray1[0] = myArray1[lastIndex];
+            myArray1[lastIndex] = temp;
+            console.log(myArray1);
+        }
+        getlast();
+
+        </script>
+</body>
+</html>

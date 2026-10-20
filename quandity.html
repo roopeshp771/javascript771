@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quandity checker</title>
+</head>
+<body>
+    <button onclick="check(1)" >Add to cart</button>
+    <button onclick="check(+2)" >+2</button>
+    <button onclick="check(+3)" >+3</button>
+    <button onclick="check(quandity = 0)">Restore-value</button>
+    <button onclick= "check(-1)">-1</button>
+    <p class = "js-out"></p>
+    <script>
+        let quandity = 0;
+        function check(choose){
+            quandity += choose;
+         document.querySelector('.js-out').innerHTML = `you Quandity: ${quandity}`;
+        }
+    </script>
+</body>
+</html>

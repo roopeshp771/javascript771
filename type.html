@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder = "enter your item" onkeyup = "
+        show(value)
+        ">
+    <p class = "js-menu"></p>
+     <script>
+        function show(value){
+        document.querySelector('.js-menu').innerHTML = value;
+        }
+    </script>
+</body>
+</html>

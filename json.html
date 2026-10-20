@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON Object </title>
+</head>
+<body>
+    <script>
+    const product = {
+        name : 'shirt',
+        price : 500,
+        ["delivery-time"] : '20min',
+        rating : {
+            stars : "4.5"
+        },
+        fun(){
+            console.log("google is my target");
+        },
+    };
+
+    console.log(typeof JSON.stringify(product));
+
+    const jsonString = JSON.stringify(product);
+    
+    console.log(JSON.parse(jsonString));
+    </script>
+</body>
+</html>
